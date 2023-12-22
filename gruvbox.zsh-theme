@@ -95,6 +95,12 @@ prompt_context() {
     darwin*)  OS_LOGO="\ue29e" ;; # 
     linux*)   OS_LOGO="\ue712" ;; # 
   esac
+
+  source /etc/os-release
+  case "$ID" in
+    ubuntu*)  OS_LOGO="\ue73a" ;;
+  esac
+
   prompt_segment 237 7 $OS_LOGO
 }
 
