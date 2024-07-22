@@ -99,6 +99,7 @@ prompt_context() {
   source /etc/os-release
   case "$ID" in
     ubuntu*)  OS_LOGO="\ue73a" ;;
+		arch*)  OS_LOGO="\uf303" ;;
   esac
 
   prompt_segment 237 7 $OS_LOGO
